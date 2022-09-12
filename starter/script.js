@@ -12,4 +12,4 @@ console.log(btnsOpenModal);
 //const btnsOpenModal = document.querySelectorAll('.show-Modal');
 
 for (let i = 0; i < btnsOpenModal.length; i++)
-  console.log(btnsOpenModal[i].textContent);
+  
