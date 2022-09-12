@@ -11,13 +11,14 @@ console.log(btnsOpenModal);
 //in this case it is wise to use querySelectorAll I.E
 //const btnsOpenModal = document.querySelectorAll('.show-Modal');
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener('click', function () {
-    console.log('Button Clicked');
-    modal.classList.remove('hidden');
-    overLay.classList.remove('hidden');
-  });
+const openModal = function () {
+  console.log('Button Clicked');
+  modal.classList.remove('hidden');
+  overLay.classList.remove('hidden');
+};
 
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener('click', openModal);
 const closeModal = function () {
   modal.classList.add('hidden');
   overLay.classList.add('hidden');
@@ -25,3 +26,5 @@ const closeModal = function () {
 btnCloseModal.addEventListener('click', closeModal);
 
 overLay.addEventListener('click', closeModal);
+
+//the function does not have a () so that the function is not called immediately.
