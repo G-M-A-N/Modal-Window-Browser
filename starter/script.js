@@ -28,3 +28,7 @@ btnCloseModal.addEventListener('click', closeModal);
 overLay.addEventListener('click', closeModal);
 
 //the function does not have a () so that the function is not called immediately.
+
+document.addEventListener('keydown', function () {
+  console.log('A key was Pressed');
+});
