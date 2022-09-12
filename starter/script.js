@@ -30,7 +30,7 @@ overLay.addEventListener('click', closeModal);
 //the function does not have a () so that the function is not called immediately.
 
 document.addEventListener('keydown', function (gr) {
-  if (gr.key === 'Escape' && !modal.classList.contains('hidden') {
-    closeModal
-}
+  if (gr.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
 });
