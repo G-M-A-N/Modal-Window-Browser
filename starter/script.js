@@ -3,7 +3,7 @@
 const modal = document.querySelector('.modal');
 const overLay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
-const btnsOpenModal = document.querySelectorAll('.show-Modal');
+const btnsOpenModal = document.querySelectorAll('.show-modal');
 console.log(btnsOpenModal);
 
 //conflict arises when using query selector when there are many html elements with the same class name.DocumentQuery selctor will select the first one only.
@@ -13,5 +13,7 @@ console.log(btnsOpenModal);
 
 for (let i = 0; i < btnsOpenModal.length; i++)
   btnsOpenModal[i].addEventListener('click', function () {
+    console.log('Button Clicked');
     modal.classList.remove('hidden');
+    overLay.classList.remove('hidden');
   });
